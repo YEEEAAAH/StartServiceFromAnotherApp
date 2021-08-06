@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_start_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="绑定服务" />
+
+    <Button
+        android:id="@+id/btn_stop_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="解绑服务" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询数据"
+        android:id="@+id/query_data"
+        android:layout_marginLeft="20dp"
+        />
+<!--    <EditText
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="同步数据到绑定的服务"
+        android:id="@+id/et_input"/>-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        >
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/ipt_book_name"
+            android:hint="请输入书名"
+
+            />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询价格"
+        android:id="@+id/btn_query_price"
+        android:layout_marginLeft="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="结账"
+        android:id="@+id/btn_buy"
+        android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="价格:"
+        android:id="@+id/query_price"
+        android:layout_marginLeft="20dp"
+        android:textSize="22sp"
+        android:textColor="@color/cardview_dark_background"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/ipt_user_name"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:hint="请输入用户名"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="查询待还书籍"
+            android:id="@+id/query_book"
+            />
+        <Button
+            android:id="@+id/return_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="归还"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="待还:"
+        android:textSize="22sp"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/book_to_return"
+        />
+
+
+
+
+</LinearLayout>
